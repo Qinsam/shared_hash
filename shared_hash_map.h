@@ -10,7 +10,7 @@
 /*基于mmap的hash_map实现，key只支持string,其他类型通过转换为唯一string来存储
  *k-v 支持  k对1(default)  1对k(k通过构造函数来控制)
  *通过HASH_MAP_CONF(entry_name,max_query_len,topk)宏来生成一个配置，
- *第一个参数是hash_entry的name，可以自定义随便起
+ *第一个参数是hash_entry的name，可以自定义
  *第二个参数是max_query_le,代表支持的query的最大长度，考虑到性能和空间，qkey不能任意长，这个参数只能填数字，如:50
  *第三个参数是一个key,最多对应多少value,考虑到性能和空间，一个key暂时不支持对应任意多少value
  *
